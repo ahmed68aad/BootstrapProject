@@ -1,0 +1,51 @@
+:root {
+    --main-family : "Rubik", sans-serif !important;
+}
+body {
+    font-family: var(--main-family);
+}
+/* Showcase */
+h2.fs-1 {
+    font-size: 3rem !important;
+}
+.animate__backInRight,
+.animate__backInLeft {
+    animation-duration: 2s;
+}
+/* Services Section */
+.services .row .col-lg-4:nth-child(even) .icon{
+    background-color: #E9E4FB;
+    color: #917aeb;
+}
+.services .row .col-lg-4:nth-child(odd) .icon {
+    background-color: #DCF0E2;
+    color: #51B574;
+}
+/* Resposive (Mobile And Tablests) */
+@media (max-width: 991.98px) { 
+    /* Navbar */
+    .navbar-collapse  {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+    /* Showcase */
+    .showcase .row {
+        text-align: center;
+        margin-top: .25rem;
+    }
+    .showcase .row .col-sm-12 h2 , 
+    .showcase .row .col-sm-12 p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .showcase .row .col-sm-12:nth-child(2) {
+        margin-top: 2.8rem;
+    }
+}
+/* Mobile Devices Only */
+@media (max-width: 767.98px) { 
+    .showcase .row .col-sm-12 h2 {
+        font-size: 2rem !important;
+    } 
+ }
